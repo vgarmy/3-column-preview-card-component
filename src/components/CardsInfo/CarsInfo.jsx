@@ -1,21 +1,29 @@
 import React from 'react'
 import './carsinfo.css'
-import data from './cars.json'
+import carsinfo from '../../constans'
 
-const carsItems = data.map(data =>
-    <div className={'card_container_'+ data.type}>
-        <img src={+data.image} alt={data.type}></img>
-        <h2>{data.type}</h2>
-        <p>{data.info}</p>
-        <button className={'btn_' + data.type}>Learn More</button>
+const CarCard = ({ index, type, info, image }) => (
+    <div>
+        <div className={'card_container_' + type}>
+            <img src={image} alt={type}></img>
+            <h2>{type}</h2>
+            <p>{info}</p>
+            <button className={'btn_' + type}>Learn More</button>
+        </div>
     </div>
 );
-
 
 const CarsInfo = () => {
     return (
         <div className='card_container'>
-            {carsItems}
+            {carsinfo.map((carsinfo, index) => (
+                <CarCard
+                    key={carsinfo.type}
+                    index={index}
+                    {...carsinfo}
+                />
+            )
+            )}
         </div>
     )
 }
