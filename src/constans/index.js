@@ -7,12 +7,12 @@ const carsinfo = [
     {
       "type": "SUVs",
       "info": "Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.",
-      "image": "/3-column-preview-card-component/images/icon-sedans.svg",
+      "image": "/3-column-preview-card-component/images/icon-suvs.svg",
     },
     {
       "type": "Luxury",
       "info": "Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.",
-      "image": "/3-column-preview-card-component/images/icon-sedans.svg",
+      "image": "/3-column-preview-card-component/images/icon-luxury.svg",
     },
   ];
 
